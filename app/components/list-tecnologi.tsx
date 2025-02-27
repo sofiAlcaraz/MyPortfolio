@@ -5,11 +5,8 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  Typography,
 } from "@mui/material";
 import React from "react";
-import ImageIcon from "@mui/icons-material/Image";
-import WorkIcon from "@mui/icons-material/Work";
 import JavascriptIcon from "@mui/icons-material/Javascript";
 
 export default function ListTecnologi() {
