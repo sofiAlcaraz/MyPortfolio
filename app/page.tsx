@@ -11,7 +11,6 @@ export default function Home() {
           <Navbar />
           <Welcome />
           <AboutMy />
-          {/*<ButterflyParticles />*/}
         </div>
         <div>
           <Footer />
