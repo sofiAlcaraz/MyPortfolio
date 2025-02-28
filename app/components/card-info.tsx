@@ -1,4 +1,4 @@
-import Box from "@mui/material/Box";
+import Box, { BoxProps } from "@mui/material/Box";
 import {
   Button,
   Card,
@@ -9,7 +9,25 @@ import {
   Typography,
 } from "@mui/material";
 
-export default function CardInfo() {
+type CustomCardInfoProps = {
+  image: string;
+  alt: string;
+  titleImage: string;
+  titleCard: string;
+  textSecondaryCard: string;
+  bodiCard: string;
+  buttonPage: string;
+} & BoxProps;
+
+const CardInfo: React.FC<CustomCardInfoProps> = ({
+  image,
+  alt,
+  titleImage,
+  titleCard,
+  textSecondaryCard,
+  bodiCard,
+  buttonPage,
+}) => {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
       <Card>
@@ -19,7 +37,7 @@ export default function CardInfo() {
             image="/images/trabajadora.jpg"
             alt="Trabajadora"
             title="Yo trabajando"
-            sx={{ maxHeight: "50rem" }}
+            sx={{ maxHeight: "30rem" }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -43,4 +61,6 @@ export default function CardInfo() {
       </Card>
     </Box>
   );
-}
+};
+
+export default CardInfo;

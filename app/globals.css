@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+
 html,
-body {
+main {
   color: #ffff;
-  background: green;
+  background: #031c3d;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
 }
