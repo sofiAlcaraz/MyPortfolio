@@ -4,16 +4,11 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { createSvgIcon, IconButton, SvgIcon } from "@mui/material";
+import { IconButton } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
 
 const RedesList = () => {
-  const GitLabIcon = createSvgIcon(
-    <path d="M12 4.5v15m7.5-7.5h-15" />,
-    "GitLabIcon"
-  );
-
   return (
     <Box sx={{ display: "flex", gap: "2rem", justifyContent: "center" }}>
       <Link href="https://www.facebook.com/sofiamelina.alcaraz/" passHref>
