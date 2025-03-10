@@ -4,35 +4,46 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { IconButton } from "@mui/material";
+import { createSvgIcon, IconButton, SvgIcon } from "@mui/material";
 import Link from "next/link";
+import Image from "next/image";
 
 const RedesList = () => {
+  const GitLabIcon = createSvgIcon(
+    <path d="M12 4.5v15m7.5-7.5h-15" />,
+    "GitLabIcon"
+  );
+
   return (
     <Box sx={{ display: "flex", gap: "2rem", justifyContent: "center" }}>
       <Link href="https://www.facebook.com/sofiamelina.alcaraz/" passHref>
-        <IconButton color="secondary" aria-label="Facebook" component="a">
+        <IconButton color="primary" aria-label="Facebook">
           <FacebookIcon />
         </IconButton>
       </Link>
       <Link href="/otra-pagina" passHref>
-        <IconButton color="secondary" aria-label="Instagram">
+        <IconButton color="primary" aria-label="Instagram">
           <InstagramIcon />
         </IconButton>
       </Link>
       <Link href="https://www.linkedin.com/in/sofia-alcaraz/" passHref>
-        <IconButton color="secondary" aria-label="linkedin">
+        <IconButton color="primary" aria-label="linkedin">
           <LinkedInIcon />
         </IconButton>
       </Link>
       <Link href="https://github.com/sofiAlcaraz" passHref>
-        <IconButton color="secondary" aria-label="GitHub">
+        <IconButton color="primary" aria-label="GitHub">
           <GitHubIcon />
         </IconButton>
       </Link>
       <Link href="https://gitlab.com/users/sofiialcaraz16" passHref>
-        <IconButton color="secondary" aria-label="GitLab">
-          <GitHubIcon />
+        <IconButton color="primary" aria-label="GitLab">
+          <Image
+            src="/images/git-lab2.png"
+            width={20}
+            height={20}
+            alt="GitLab"
+          />
         </IconButton>
       </Link>
     </Box>

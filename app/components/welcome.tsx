@@ -2,24 +2,23 @@
 
 import { Box, Typography } from "@mui/material";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 const Welcome = () => {
   return (
     <Box
+      id="Bienvenidos"
       sx={{
         display: "flex",
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
-        margin: "2rem",
         gap: "2rem",
         justifyContent: "center",
       }}
     >
       <Image
         src="/images/welcome-photo.jpg"
-        width={500}
-        height={500}
+        width={400}
+        height={400}
         alt="My photo"
       />
 
@@ -30,10 +29,10 @@ const Welcome = () => {
           textAlign: { xs: "center", md: "left" },
         }}
       >
-        <Typography variant="h1">Bienvenido!</Typography>
-        <Typography variant="h3">
-          Mi nombre es Sofia Alcaraz, desarrolladora Full Stack y estudiante de
-          la carrera Licenciatura en Sistemas.
+        <Typography variant="h4"> ¡Bienvenidos!</Typography>
+        <Typography variant="h6">
+          Me llamo Sofía Alcaraz, soy desarrolladora Full Stack y estudiante de
+          Licenciatura en Sistemas. Este es mi primer portfolio, en desarrollo.
         </Typography>
       </Box>
     </Box>

@@ -4,19 +4,16 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 const options = [
-  "Sobre mi",
+  "Bienvenidos",
   "Experiencia",
   "Educación",
   "Tecnologias",
   "Redes",
-  "Contacto",
 ];
 
 const Navbar = () => {
@@ -47,11 +44,7 @@ const Navbar = () => {
 
           <Box sx={{ display: { md: "flex" } }}>
             {options.map((option) => (
-              <Button
-                key={option}
-                onClick={(e) => scrollToSection(option)}
-                sx={{ color: "white" }}
-              >
+              <Button key={option} onClick={(e) => scrollToSection(option)}>
                 {option}
               </Button>
             ))}

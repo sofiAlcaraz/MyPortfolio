@@ -44,7 +44,6 @@ export default function ListTecnologi() {
         {listTecnologi.map((option) => (
           <ListItem key={option.tecnologia}>
             <Button
-              color="secondary"
               variant="outlined"
               size="large"
               onClick={() => OnClickOption(option.tecnologia)}

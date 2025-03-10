@@ -5,9 +5,12 @@ const theme = createTheme({
     fontFamily: '"Madimi One", sans-serif',
   },
   palette: {
-    mode: "light",
+    mode: "dark",
     primary: {
-      main: "#031c3d",
+      main: "#8ecbae",
+    },
+    secondary: {
+      main: "#ff4081",
     },
   },
 });

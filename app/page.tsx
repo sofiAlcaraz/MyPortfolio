@@ -9,7 +9,14 @@ export default function Home() {
     <main>
       <Box>
         <Navbar />
-        <Box sx={{ padding: "4rem" }}>
+        <Box
+          sx={{
+            maxWidth: "65ch",
+            margin: "auto",
+            lineHeight: "1.6",
+            marginTop: "5rem",
+          }}
+        >
           <Welcome />
           <AboutMy />
         </Box>

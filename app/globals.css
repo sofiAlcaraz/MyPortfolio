@@ -2,12 +2,18 @@
 
 html,
 main {
-  color: #ffff;
+  color: white;
   background: #031c3d;
+}
+
+li {
+  list-style-type: square;
+  margin-left: 20px;
 }
 
 footer {
   display: flex;
+  padding-top: 10rem;
   justify-content: center;
   gap: 1rem;
 }

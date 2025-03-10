@@ -1,50 +1,84 @@
 "use client";
 
-import { Box, Typography } from "@mui/material";
-import CardInfo from "./card-info";
+import { Box, Paper, Typography } from "@mui/material";
 import ListTecnologi from "./list-tecnologi";
 import RedesList from "./redes-list";
 
 const AboutMy = () => {
   return (
     <Box sx={{ display: "flex", flexDirection: "column", paddingTop: "4rem" }}>
-      <Typography id="Sobre mi" variant="h4">
-        Sobre mi ...
-      </Typography>
       <Box
         sx={{
           display: "flex",
           flexDirection: "column",
-          padding: "2rem",
-          gap: "4rem",
+          gap: "2rem",
         }}
       >
         <Typography id="Experiencia" variant="h5">
           Experiencia
         </Typography>
-        <CardInfo
-          image="/images/trabajadora.jpg"
-          alt="Trabajadora"
-          titleImage="Yo trabajando"
-          titleCard=" Ticmas, Buenos Aires— Desarrolladora FullStack"
-          textSecondaryCard="     MARZO DE 2022 - JULIO DE 2024"
-          bodiCard=" Desarrolladora FullStack de la biblioteca “bidi” de ticmas, tuve
-              tareas tanto front como back en distintos proyectos de la
-              empresas, aprendi distintos lenguajes, algunos mas que otros."
-          buttonPage=""
-        ></CardInfo>
+        <Paper sx={{}}>
+          <Typography gutterBottom variant="h5" component="h2">
+            {"Ticmas, Buenos Aires— Desarrolladora FullStack"}
+          </Typography>
+          <Typography color="textSecondary" gutterBottom>
+            {"MARZO DE 2022 - JULIO DE 2024"}
+          </Typography>
+          <ol>
+            <li>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Desarrollo de nuevas funcionalidades en el sistema de biblioteca
+                digital "Bidi".
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Participación activa en el desarrollo full stack, colaborando
+                tanto en frontend (React) como backend (Node.js, PHP con
+                Laravel).
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Resolución de bugs y mejora continua de productos.
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Integración con APIs y optimización de servicios.
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Trabajo colaborativo con equipos de diseño y producto, aplicando
+                metodologías ágiles.
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body2" color="textSecondary" component="p">
+                Contribución en la documentación técnica de procesos y
+                funcionalidades.
+              </Typography>
+            </li>
+          </ol>
+        </Paper>
+
         <Typography id="Educación" variant="h5">
           Educación
         </Typography>
-        <CardInfo
-          image="/images/trabajadora.jpg"
-          alt="Estudiante"
-          titleImage="Yo Estudiando"
-          titleCard="Universidad Nacional de General Sarmiento, Los Polvorines — Licenciatura en Sistemas y Tecnicatura en Informática."
-          textSecondaryCard="MARZO DE 2019 - ACTUALIDAD"
-          bodiCard="Actualmente me encuentro cursando el tercer año de la carrera."
-          buttonPage=""
-        ></CardInfo>
+        <Paper sx={{}}>
+          <Typography gutterBottom variant="h5" component="h2">
+            {
+              "Universidad Nacional de General Sarmiento, Los Polvorines — Licenciatura en Sistemas"
+            }
+          </Typography>
+          <Typography color="textSecondary" gutterBottom>
+            {"MARZO DE 2019 - ACTUALIDAD"}
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            {"Actualmente me encuentro cursando el tercer año de la carrera."}
+          </Typography>
+        </Paper>
         <Typography id="Tecnologias" variant="h5">
           Tecnologias
         </Typography>
