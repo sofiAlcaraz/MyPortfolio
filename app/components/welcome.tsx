@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 const Welcome = () => {
   const router = useRouter();
 
-  const handleClick = (e) => {
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     router.push("/about");
   };
