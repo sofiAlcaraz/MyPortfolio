@@ -1,39 +1,52 @@
 "use client";
 
 import { Box, Typography } from "@mui/material";
-import Image from "next/image";
+import Button from "@mui/material/Button";
+import EastIcon from "@mui/icons-material/East";
+import { useRouter } from "next/navigation";
 
 const Welcome = () => {
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    router.push("/about");
+  };
+
   return (
     <Box
-      id="Bienvenidos"
       sx={{
         display: "flex",
-        flexDirection: { xs: "column", md: "row" },
-        alignItems: "center",
-        gap: "2rem",
         justifyContent: "center",
+        height: "100%",
       }}
     >
-      <Image
-        src="/images/welcome-photo.jpg"
-        width={400}
-        height={400}
-        alt="My photo"
-      />
-
       <Box
         sx={{
           display: "flex",
-          flexDirection: "column",
-          textAlign: { xs: "center", md: "left" },
+          width: "50rem",
+          flexDirection: "row",
+          alignItems: "center",
         }}
       >
-        <Typography variant="h4"> ¡Bienvenidos!</Typography>
-        <Typography variant="h6">
-          Me llamo Sofía Alcaraz, soy desarrolladora Full Stack y estudiante de
-          Licenciatura en Sistemas. Este es mi primer portfolio, en desarrollo.
-        </Typography>
+        <Box>
+          <Typography className={"open-sans"} variant="h1">
+            Sofía Alcaraz
+          </Typography>
+          <Typography className={"open-sans"} variant="h4">
+            Desarrolladora Full-Stack y estudiante de la Licenciatura en
+            Sistemas.
+          </Typography>
+        </Box>
+        <Box>
+          <Button
+            variant="outlined"
+            endIcon={<EastIcon />}
+            onClick={handleClick}
+          >
+            Conoceme!
+          </Button>
+        </Box>
       </Box>
     </Box>
   );

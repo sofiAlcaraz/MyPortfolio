@@ -1,11 +1,8 @@
 const Footer = () => {
   return (
     <footer>
-      <p>Todos los derechos reservados</p>
       <p>
-        <a href="mailto:hege@example.com">
-          ©Copyright2025. Hecho por Sofia Alcaraz.
-        </a>
+        Todos los derechos reservados ©Copyright2025. Hecho por Sofia Alcaraz.
       </p>
     </footer>
   );

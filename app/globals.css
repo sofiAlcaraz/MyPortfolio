@@ -1,19 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
-
 html,
-main {
-  color: white;
-  background: #031c3d;
+main,
+body {
+  height: 100%;
+  margin: 0;
+  color: rgb(21, 139, 148);
+  background: #000000;
 }
-
+.open-sans {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(21, 139, 148);
+  color: #000000;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 li {
   list-style-type: square;
   margin-left: 20px;
-}
-
-footer {
-  display: flex;
-  padding-top: 10rem;
-  justify-content: center;
-  gap: 1rem;
 }

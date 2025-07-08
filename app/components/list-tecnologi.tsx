@@ -29,32 +29,20 @@ export default function ListTecnologi() {
     });
   };
   return (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-      }}
-    >
-      <List
-        sx={{
-          width: "100%",
-          maxWidth: 360,
-        }}
-      >
-        {listTecnologi.map((option) => (
-          <ListItem key={option.tecnologia}>
-            <Button
-              variant="outlined"
-              size="large"
-              onClick={() => OnClickOption(option.tecnologia)}
-            >
-              {optionClicked.includes(option.tecnologia)
-                ? option.anios
-                : option.tecnologia}
-            </Button>
-          </ListItem>
-        ))}
-      </List>
-    </Box>
+    <List>
+      {listTecnologi.map((option) => (
+        <ListItem key={option.tecnologia}>
+          <Button
+            variant="outlined"
+            size="small"
+            onClick={() => OnClickOption(option.tecnologia)}
+          >
+            {optionClicked.includes(option.tecnologia)
+              ? option.anios
+              : option.tecnologia}
+          </Button>
+        </ListItem>
+      ))}
+    </List>
   );
 }

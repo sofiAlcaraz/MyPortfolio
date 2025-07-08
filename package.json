@@ -20,7 +20,8 @@
     "next": "^15.1.7",
     "next-intl": "^3.26.5",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.6.3"
   },
   "devDependencies": {
     "@types/node": "22.13.5",

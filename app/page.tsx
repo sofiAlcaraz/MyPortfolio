@@ -1,14 +1,13 @@
 import Welcome from "./components/welcome";
 import Navbar from "./components/nav-bar";
-import AboutMy from "./components/about-my";
+import AboutMy from "./about/page";
 import Footer from "./components/footer";
 import { Box } from "@mui/material";
 
 export default function Home() {
   return (
     <main>
-      <Box>
-        <Navbar />
+      {/*<Navbar />
         <Box
           sx={{
             maxWidth: "65ch",
@@ -17,11 +16,12 @@ export default function Home() {
             marginTop: "5rem",
           }}
         >
-          <Welcome />
           <AboutMy />
         </Box>
-        <Footer />
-      </Box>
+        <Footer />*/}
+      <Welcome />
+
+      <Footer />
     </main>
   );
 }

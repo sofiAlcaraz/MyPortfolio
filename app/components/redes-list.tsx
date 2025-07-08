@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const RedesList = () => {
   return (
-    <Box sx={{ display: "flex", gap: "2rem", justifyContent: "center" }}>
+    <Box>
       <Link href="https://www.facebook.com/sofiamelina.alcaraz/" passHref>
         <IconButton color="primary" aria-label="Facebook">
           <FacebookIcon />
