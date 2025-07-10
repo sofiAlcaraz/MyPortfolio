@@ -24,16 +24,16 @@ const Welcome = () => {
       <Box
         sx={{
           display: "flex",
-          width: "50rem",
           flexDirection: "row",
           alignItems: "center",
+          flexWrap: "wrap",
         }}
       >
         <Box>
-          <Typography className={"open-sans"} variant="h1">
+          <Typography className={"open-sans"} variant="h2">
             Sofía Alcaraz
           </Typography>
-          <Typography className={"open-sans"} variant="h4">
+          <Typography className={"open-sans"} variant="h5">
             Desarrolladora Full-Stack y estudiante de la Licenciatura en
             Sistemas.
           </Typography>
